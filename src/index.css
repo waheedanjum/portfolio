@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Sora";
+  src: url("../Font/static/Sora-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Sora", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
