@@ -30,7 +30,7 @@ function Navigation(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Usama Ijaz
+        Waheed Anjum
       </Typography>
       <Divider />
       <List>
@@ -49,7 +49,8 @@ function Navigation(props) {
                   color: "inherit",
                   display: "block",
                   width: "100%",
-                }}>
+                }}
+              >
                 <ListItemText primary={item} onClick={handleDrawerToggle} />
               </ScrollLink>
             </ListItemButton>
@@ -59,8 +60,7 @@ function Navigation(props) {
     </Box>
   );
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
     <motion.div
@@ -72,22 +72,18 @@ function Navigation(props) {
         ease: "linear",
         duration: 2,
         y: { duration: 1, delay: 0.1 },
-      }}>
+      }}
+    >
       <Box sx={{ display: "flex" }}>
         <AppBar
           component="nav"
           sx={{
-            background:
-              "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(21,49,112,1) 80%)",
+            background: "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(21,49,112,1) 80%)",
             boxShadow: "none",
-          }}>
+          }}
+        >
           <Toolbar sx={{ padding: "20px 30px" }}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { md: "block", lg: "none" } }}>
+            <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2, display: { md: "block", lg: "none" } }}>
               <MenuIcon />
             </IconButton>
             <Typography
@@ -97,37 +93,27 @@ function Navigation(props) {
                 flexGrow: 1,
                 textAlign: { xs: "center", lg: "start" },
                 paddingLeft: { xs: "0", lg: 13 },
-              }}>
-              <Link
-                href="mailto:maliku400@gmail.com"
-                target="_blank"
-                rel="noopener"
-                underline="none"
-                style={{ color: "white" }}>
-                Maliku400@gmail.com
+              }}
+            >
+              <Link href="mailto:me@waheedanjum.com" target="_blank" rel="noopener" underline="none" style={{ color: "white" }}>
+                me@waheedanjum.com
               </Link>
             </Typography>
             <Box
               sx={{
                 display: { xs: "none", lg: "block" },
                 pr: 20,
-              }}>
+              }}
+            >
               {navItems.map((item) => (
-                <ScrollLink
-                  key={item}
-                  to={item}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-70}
-                  style={{ textDecoration: "none" }}>
+                <ScrollLink key={item} to={item} smooth={true} duration={500} spy={true} exact="true" offset={-70} style={{ textDecoration: "none" }}>
                   <Button
                     sx={{
                       color: "#fff",
                       mr: 1,
                       fontSize: 17,
-                    }}>
+                    }}
+                  >
                     {item}
                   </Button>
                 </ScrollLink>
@@ -152,7 +138,8 @@ function Navigation(props) {
                 bgcolor: "black",
                 color: "white",
               },
-            }}>
+            }}
+          >
             {drawer}
           </Drawer>
         </nav>
