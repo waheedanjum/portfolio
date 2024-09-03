@@ -1,44 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { Education, Experience } from "../CONSTANTS";
 
 const About = () => {
-  const Experience = [
-    {
-      Date: "2022 - Present",
-      Position: "Software Engineer @ Purelogics",
-      Location: "Lahore,Punjab",
-    },
-    {
-      Date: "10/09/2021 - 01/01/2022",
-      Position: "Associate Software Engineer @ Purelogics",
-      Location: "Lahore,Punjab",
-    },
-    {
-      Date: "04/02/2021 - 10/09/2021 ",
-      Position: "Intern Software Engineer @ TechVerse ",
-      Location: "Lahore,Punjab",
-    },
-  ];
-
-  const Education = [
-    {
-      Date: "2017 - 2021",
-      Position: "Bachelor's in Computer Science",
-      Location: "University of Management and Technology",
-    },
-    {
-      Date: "2014 - 2016",
-      Position: "FSC Pre-Engineering",
-      Location: "Punjab College",
-    },
-    {
-      Date: "2011 - 2013",
-      Position: "Matriculation",
-      Location: "Cathedral High School",
-    },
-  ];
-
   return (
     <Box
       id="Experience"
@@ -46,7 +11,8 @@ const About = () => {
       sx={{
         background: "black",
         paddingBottom: 10,
-      }}>
+      }}
+    >
       <Box
         component="div"
         sx={{
@@ -57,8 +23,9 @@ const About = () => {
           width: "80%",
           margin: "0 auto",
           gap: "50px",
-        }}>
-        <Box sx={{ width: { xs: "100%", lg: "40%" } }}>
+        }}
+      >
+        <Box sx={{ width: { xs: "100%", lg: "100%" } }}>
           <motion.div
             initial={{ y: 40, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -66,14 +33,16 @@ const About = () => {
               ease: "linear",
               duration: 1,
               y: { duration: 0.5, delay: 0.1 },
-            }}>
+            }}
+          >
             <Typography
               sx={{
                 fontSize: 50,
                 paddingBottom: 5,
 
                 textAlign: { xs: "center", lg: "left" },
-              }}>
+              }}
+            >
               My Experience
             </Typography>
           </motion.div>
@@ -86,7 +55,8 @@ const About = () => {
                 ease: "linear",
                 duration: 1,
                 y: { duration: 0.5, delay: 0.1 },
-              }}>
+              }}
+            >
               <Box
                 key={index}
                 sx={{
@@ -104,22 +74,31 @@ const About = () => {
                     transition: ".3s ease",
                     transform: "scale(1.05)",
                   },
-                }}>
+                }}
+              >
                 <Typography sx={{ fontSize: "15px" }}>{item.Date}</Typography>
                 <Box component="div">
-                  <Typography sx={{ fontSize: "18px" }}>
-                    {item.Position}
-                  </Typography>
-                  <Typography sx={{ fontSize: "15px" }}>
-                    {item.Location}
-                  </Typography>
+                  <Typography sx={{ fontSize: "18px" }}>{item.Position}</Typography>
+                  <Typography sx={{ fontSize: "15px" }}>{item.Location}</Typography>
                 </Box>
               </Box>
             </motion.div>
           ))}
         </Box>
-
-        <Box sx={{ width: { xs: "100%", lg: "40%" } }}>
+      </Box>
+      <Box
+        component="div"
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", lg: "row" },
+          justifyContent: "space-between",
+          paddingTop: "70px",
+          width: "80%",
+          margin: "0 auto",
+          gap: "50px",
+        }}
+      >
+        <Box sx={{ width: { xs: "100%", lg: "100%" } }}>
           <motion.div
             initial={{ y: 40, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -127,14 +106,16 @@ const About = () => {
               ease: "linear",
               duration: 1,
               y: { duration: 0.5, delay: 0.1 },
-            }}>
+            }}
+          >
             <Typography
               sx={{
                 fontSize: 50,
                 paddingBottom: 5,
 
                 textAlign: { xs: "center", lg: "left" },
-              }}>
+              }}
+            >
               My Education
             </Typography>
           </motion.div>
@@ -146,7 +127,8 @@ const About = () => {
                 ease: "linear",
                 duration: 1,
                 y: { duration: 0.5, delay: 0.1 },
-              }}>
+              }}
+            >
               <Box
                 key={index}
                 sx={{
@@ -164,15 +146,12 @@ const About = () => {
                     transition: ".3s ease",
                     transform: "scale(1.05)",
                   },
-                }}>
+                }}
+              >
                 <Typography sx={{ fontSize: "15px" }}>{item.Date}</Typography>
                 <Box component="div">
-                  <Typography sx={{ fontSize: "18px" }}>
-                    {item.Position}
-                  </Typography>
-                  <Typography sx={{ fontSize: "15px" }}>
-                    {item.Location}
-                  </Typography>
+                  <Typography sx={{ fontSize: "18px" }}>{item.Position}</Typography>
+                  <Typography sx={{ fontSize: "15px" }}>{item.Location}</Typography>
                 </Box>
               </Box>
             </motion.div>

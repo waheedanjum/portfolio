@@ -15,6 +15,7 @@ import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "@mui/material/Link";
+import { EMAIL } from "../CONSTANTS";
 
 const drawerWidth = 240;
 const navItems = ["Services", "Work", "Experience", "Skills", "Contact"];
@@ -95,8 +96,8 @@ function Navigation(props) {
                 paddingLeft: { xs: "0", lg: 13 },
               }}
             >
-              <Link href="mailto:me@waheedanjum.com" target="_blank" rel="noopener" underline="none" style={{ color: "white" }}>
-                me@waheedanjum.com
+              <Link href={"mailto:".concat(EMAIL)} target="_blank" rel="noopener" underline="none" style={{ color: "white" }}>
+                {EMAIL}
               </Link>
             </Typography>
             <Box

@@ -7,6 +7,7 @@ import { Home, LinkedIn, Mail, WhatsApp } from "@mui/icons-material";
 import { Call } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import Link from "@mui/material/Link";
+import { ADDRESS, EMAIL, LINKEDIN, NAME, PHONE_NUMBER } from "../CONSTANTS";
 
 function Footer() {
   return (
@@ -16,19 +17,20 @@ function Footer() {
       sx={{
         top: "auto",
         bottom: 0,
-        background:
-          "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(21,49,112,1) 80%)",
+        background: "linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(21,49,112,1) 80%)",
         boxShadow: "none",
         px: 20,
         py: 5,
-      }}>
+      }}
+    >
       <Toolbar
         sx={{
           display: "flex",
           justifyContent: "space-between",
           flexDirection: { xs: "column-reverse", lg: "row" },
           gap: { xs: 5 },
-        }}>
+        }}
+      >
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -36,11 +38,13 @@ function Footer() {
             ease: "linear",
             duration: 1,
             y: { duration: 0.5, delay: 0.1 },
-          }}>
+          }}
+        >
           <Box
             sx={{
               textAlign: "center",
-            }}>
+            }}
+          >
             <Typography component="div">
               <Typography variant="h6">Contact</Typography>
               <Typography
@@ -49,8 +53,9 @@ function Footer() {
                   justifyContent: "center",
                   // alignItems: "center",
                   gap: 1,
-                }}>
-                <Call /> (+92) 300-4821983
+                }}
+              >
+                <Call /> {PHONE_NUMBER}
               </Typography>
               <Typography
                 sx={{
@@ -58,9 +63,10 @@ function Footer() {
                   justifyContent: "center",
 
                   gap: 1,
-                }}>
+                }}
+              >
                 {" "}
-                <Mail /> maliku400@gmail.com
+                <Mail /> {EMAIL}
               </Typography>
               <Typography
                 sx={{
@@ -68,9 +74,9 @@ function Footer() {
                   justifyContent: "center",
 
                   gap: -1,
-                }}>
-                <Home /> 146-C Block Street #11, Al-Rehman Garden
-                Phase-2,Lahore,Pakistan
+                }}
+              >
+                <Home /> {ADDRESS}
               </Typography>
             </Typography>
           </Box>
@@ -83,7 +89,8 @@ function Footer() {
             ease: "linear",
             duration: 1,
             y: { duration: 0.5, delay: 0.1 },
-          }}>
+          }}
+        >
           <Box component="div">
             <Typography
               variant="h4"
@@ -91,31 +98,18 @@ function Footer() {
               sx={{
                 flexGrow: 1,
                 textAlign: "center",
-              }}>
-              Usama Ijaz
+              }}
+            >
+              {NAME}
             </Typography>
-            <Typography
-              component="div"
-              sx={{ display: "flex", justifyContent: "center", gap: 3, pt: 2 }}>
-              <Link
-                href="https://wa.me/+923004821983"
-                target="_blank"
-                rel="noopener"
-                underline="none">
+            <Typography component="div" sx={{ display: "flex", justifyContent: "center", gap: 3, pt: 2 }}>
+              <Link href={"https://wa.me/".concat(PHONE_NUMBER)} target="_blank" rel="noopener" underline="none">
                 <WhatsApp />
               </Link>
-              <Link
-                href="tel:+923004821983"
-                target="_blank"
-                rel="noopener"
-                underline="none">
+              <Link href={"tel:".concat(PHONE_NUMBER)} target="_blank" rel="noopener" underline="none">
                 <Call />
               </Link>
-              <Link
-                href="https://www.linkedin.com/in/osama-ijaz-8b584b1b5"
-                target="_blank"
-                rel="noopener"
-                underline="none">
+              <Link href={LINKEDIN} target="_blank" rel="noopener" underline="none">
                 <LinkedIn />
               </Link>
             </Typography>
