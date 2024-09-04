@@ -1,3 +1,8 @@
+import Image1 from "./assets/Image1.png";
+import Image2 from "./assets/Image3.png";
+import Image3 from "./assets/Image2.png";
+import Image4 from "./assets/Image4.png";
+
 export const PHONE_NUMBER = "+447379955442";
 export const NAME = "Waheed Anjum";
 export const EMAIL = "me@waheedanjum.com";
@@ -88,5 +93,160 @@ export const Experience = [
     Date: "01/2008 - 12/2008 ",
     Position: "Junior Java Developer, Amivox",
     Location: "Java, JDBC, SQL, Servlets, PHP, HTML, Ajax, Eclipse, MySQL",
+  },
+];
+
+export const ServicesItems = [
+  {
+    name: "Reactjs",
+    Description: "ReactJS development with Redux Toolkit and React Query. Crafting efficient state management, optimized data fetching, and seamless user experiences.",
+    initialY: {
+      x: -40,
+      opacity: 0,
+    },
+    whileInView: {
+      x: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      x: { duration: 0.5, delay: 0.1 },
+    },
+  },
+  {
+    name: "Nextjs",
+    Description: "Next.js development, leveraging Redux Toolkit and React Query for efficient state management, optimized data fetching, and seamless user experiences.",
+    initialY: {
+      x: 40,
+      opacity: 0,
+    },
+    whileInView: {
+      x: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      x: { duration: 0.5, delay: 0.1 },
+    },
+  },
+
+  {
+    name: "Angular",
+    Description:
+      "Angular development with a focus on scalable architecture and robust component-based UI. Expert in using Angular services, directives, and RxJS to deliver responsive and high-performing web applications.",
+    initialY: {
+      y: 40,
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      y: { duration: 0.5, delay: 0.1 },
+    },
+  },
+  {
+    name: "Node.js",
+    Description:
+      "Node.js development for backend services, building RESTful APIs, and real-time applications. Proficient in using Express, MongoDB, and microservices to create scalable and efficient server-side solutions.",
+    initialY: {
+      y: 40,
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      y: { duration: 0.5, delay: 0.1 },
+    },
+  },
+  {
+    name: "React Native",
+    Description:
+      "React Native development for building cross-platform mobile apps with native performance. Specializing in state management using Redux Toolkit, data synchronization with React Query, and delivering smooth, responsive mobile experiences.",
+    initialY: {
+      y: 40,
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      y: { duration: 0.5, delay: 0.1 },
+    },
+  },
+  {
+    name: ".NET",
+    Description:
+      ".NET development for creating powerful, secure, and scalable enterprise applications. Proficient in leveraging ASP.NET Core, Entity Framework, and MVC architecture to build robust web applications and services.",
+    initialY: {
+      y: 40,
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      y: { duration: 0.5, delay: 0.1 },
+    },
+  },
+  {
+    name: "C#",
+    Description:
+      "C# development with a focus on object-oriented programming and efficient code practices. Expertise in using C# for desktop applications, web development, and game development using frameworks like ASP.NET and Unity.",
+    initialY: {
+      y: 40,
+      opacity: 0,
+    },
+    whileInView: {
+      y: 0,
+      opacity: 1,
+    },
+    transition: {
+      ease: "linear",
+      duration: 1,
+      y: { duration: 0.5, delay: 0.1 },
+    },
+  },
+];
+
+export const Projects = [
+  {
+    image: Image1,
+    title: "U369 Security Token",
+    description: "u369 smart contracts are immutable. The append-only exception is to add new tokens.",
+    link: "https://u369crypto.on.fleek.co/home",
+  },
+  {
+    image: Image2,
+    title: "MadRex NFT Club",
+    description: "NFTs are generated using breeding methods using different layers.",
+    link: "https://du3m881cq6giu.cloudfront.net/",
+  },
+  {
+    image: Image3,
+    title: "IkonShop E-commerce",
+    description: "E-commerce marketplace for selling and purchasing of products.",
+    link: "https://www.ikonshop.io/",
+  },
+  {
+    image: Image4,
+    title: "Tevera web3 Gaming",
+    description: "Web3 platform for gaming, Play and earn web3 Tokens as rewards.",
+    link: "https://tevaera.com/",
   },
 ];
