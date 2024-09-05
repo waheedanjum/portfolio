@@ -105,7 +105,7 @@ export const Experience = [
     Location: "ASP.NET, C#, HTML, WinForms, CSS, JavaScript, SQL",
   },
   {
-    Date: "01/2008 - 12/2008 ",
+    Date: "01/2008 - 12/2008",
     Position: "Junior Java Developer, Amivox",
     Location: "Java, JDBC, SQL, Servlets, PHP, HTML, Ajax, Eclipse, MySQL",
   },
