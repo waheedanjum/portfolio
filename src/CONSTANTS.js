@@ -1,7 +1,22 @@
-import Image1 from "./assets/Image1.png";
-import Image2 from "./assets/Image3.png";
-import Image3 from "./assets/Image2.png";
-import Image4 from "./assets/Image4.png";
+import CQCProjectImage from "./assets/cqc.jpeg";
+import NextProjectImage from "./assets/next.jpeg";
+import ONSProjectImage from "./assets/ONS.jpeg";
+import TotalEnergiesProjectImage from "./assets/totalEnergies.jpeg";
+import CityProjectImage from "./assets/city.jpeg";
+
+import ReactLogo from "./assets/react.svg";
+import JavascriptLogo from "./assets/js.svg";
+import ReactQueryLogo from "./assets/react-query.svg";
+import AngularLogo from "./assets/angular.svg";
+import NextjsLogo from "./assets/nextjs.svg";
+import NodeJsLogo from "./assets/node-js.svg";
+import CSharp from "./assets/c-sharp.svg";
+import TypeScriptLogo from "./assets/typescript.svg";
+import DotNetLogo from "./assets/dotnet.svg";
+import MongoDBLogo from "./assets/mongodb.svg";
+import ExpressLogo from "./assets/express.svg";
+import ReduxLogo from "./assets/redux.svg";
+import FirebaseLogo from "./assets/firebase.svg";
 
 export const PHONE_NUMBER = "+447379955442";
 export const NAME = "Waheed Anjum";
@@ -226,27 +241,106 @@ export const ServicesItems = [
 
 export const Projects = [
   {
-    image: Image1,
-    title: "U369 Security Token",
-    description: "u369 smart contracts are immutable. The append-only exception is to add new tokens.",
+    image: CQCProjectImage,
+    title: "Care Quality Commsion",
+    description: "Revamping CQC Website with Scalable API and Cloud Solutions.",
     link: "https://u369crypto.on.fleek.co/home",
   },
   {
-    image: Image2,
-    title: "MadRex NFT Club",
-    description: "NFTs are generated using breeding methods using different layers.",
-    link: "https://du3m881cq6giu.cloudfront.net/",
+    image: NextProjectImage,
+    title: "Next",
+    description: "Revamping Next's E-Commerce Platform with Scalable Solutions.",
+    link: "https://www.next.co.uk/",
   },
   {
-    image: Image3,
-    title: "IkonShop E-commerce",
-    description: "E-commerce marketplace for selling and purchasing of products.",
-    link: "https://www.ikonshop.io/",
+    image: CityProjectImage,
+    title: "City FM",
+    description: "Developing a Scalable Energy Management Platform for City FM",
+    link: "https://www.cityfm.com/",
   },
   {
-    image: Image4,
-    title: "Tevera web3 Gaming",
-    description: "Web3 platform for gaming, Play and earn web3 Tokens as rewards.",
-    link: "https://tevaera.com/",
+    image: ONSProjectImage,
+    title: "Office for National Statistic",
+    description: "Modernizing the ONS Digital Platform.",
+    link: "https://www.ons.gov.uk/",
+  },
+  {
+    image: TotalEnergiesProjectImage,
+    title: "Total Energies",
+    description: "Developing a Scalable and Digital Platform for Total Energies.",
+    link: "https://totalenergies.com/",
+  },
+];
+
+export const skillsData = [
+  {
+    logo: ReactLogo,
+    name: "ReactJS",
+    percentage: "70%",
+  },
+  {
+    logo: ReduxLogo,
+    name: "Redux Toolkit",
+    percentage: "70%",
+  },
+  {
+    logo: ReactQueryLogo,
+    name: "React Query",
+    percentage: "70%",
+  },
+  {
+    logo: NextjsLogo,
+    name: "Next.js",
+    percentage: "70%",
+  },
+  {
+    logo: AngularLogo,
+    name: "Angular",
+    percentage: "70%",
+  },
+  {
+    logo: NodeJsLogo,
+    name: "Node.js",
+    percentage: "70%",
+  },
+  {
+    logo: ExpressLogo,
+    name: "Express",
+    percentage: "70%",
+  },
+  {
+    logo: MongoDBLogo,
+    name: "MongoDB",
+    percentage: "70%",
+  },
+  {
+    logo: ReactLogo,
+    name: "React Native",
+    percentage: "70%",
+  },
+  {
+    logo: DotNetLogo,
+    name: ".NET",
+    percentage: "70%",
+  },
+  {
+    logo: CSharp,
+    name: "C#",
+    percentage: "70%",
+  },
+  {
+    logo: JavascriptLogo,
+    name: "JavaScript",
+    percentage: "70%",
+  },
+  {
+    logo: TypeScriptLogo,
+    name: "TypeScript",
+    percentage: "70%",
+  },
+  {
+    logo: FirebaseLogo,
+    name: "Firebase",
+    percentage: "70%",
   },
 ];

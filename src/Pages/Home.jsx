@@ -86,13 +86,13 @@ const Home = () => {
             <Box component="div" sx={styles.motionBox}>
               <Box sx={styles.title}>
                 <Typography sx={{ fontSize: 40, marginBottom: -1 }}>{"I am ".concat(NAME)}</Typography>
-                <Typography sx={styles.largeText}>Sr. Software Engineer +</Typography>
+                <Typography sx={styles.largeText}>Sr. Software Engineer</Typography>
                 <Typography sx={styles.largeText}>Full Stack and Mobile Developer</Typography>
               </Box>
 
               <Typography sx={styles.description}>
                 {
-                  "Senior Full Stack Developer with over 15 years of experience in software development, specializing in building robust web and mobile applications using C#, ASP.NET Core, React Native, NodeJS and JavaScript frameworks."
+                  "Senior Full Stack Developer with over 10 years of experience in software development, specializing in building robust web and mobile applications using C#, ASP.NET Core, React Native, NodeJS, JavaScript frameworks etc."
                 }
               </Typography>
               <Box className="logoFont" component="div" sx={styles.logoFont}>
