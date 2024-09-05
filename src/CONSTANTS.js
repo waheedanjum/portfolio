@@ -336,11 +336,11 @@ export const skillsData = [
   {
     logo: TypeScriptLogo,
     name: "TypeScript",
-    percentage: "70%",
+    percentage: "60%",
   },
   {
     logo: FirebaseLogo,
     name: "Firebase",
-    percentage: "70%",
+    percentage: "60%",
   },
 ];
