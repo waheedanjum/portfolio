@@ -24,7 +24,7 @@ export const EMAIL = "me@waheedanjum.com";
 export const ADDRESS = "2 The Leas East Kilbride G75 9PY United Kingdom";
 export const LINKEDIN = "https://www.linkedin.com/in/muhammad-waheed-anjum-full-stack-developer/";
 export const GITHUB = "https://github.com/waheedanjum";
-export const DOWNLOAD_CV = "https://drive.google.com/file/d/13IeCalsugt6s1AdwGs_ktfBuhgAoRlh3/view?usp=sharing";
+export const DOWNLOAD_CV = "https://drive.google.com/file/d/15dtBOzb5IguzMdjQ-IEBtFRO0W_8jKBI/view?usp=sharing";
 
 export const Education = [
   {
