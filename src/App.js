@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // 2 seconds
+    }, 2000); // 2 seconds
 
     // Cleanup the timer if the component is unmounted before the timeout
     return () => clearTimeout(timer);
