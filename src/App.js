@@ -13,7 +13,7 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000); // 2 seconds
-    console.log("done");
+
     // Cleanup the timer if the component is unmounted before the timeout
     return () => clearTimeout(timer);
   }, []);
