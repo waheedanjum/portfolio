@@ -28,7 +28,7 @@ export const DOWNLOAD_CV = "https://drive.google.com/file/d/15dtBOzb5IguzMdjQ-IE
 
 export const Education = [
   {
-    Date: "2006 - 2009",
+    Date: "2006 - 20099",
     Position: "MSc Advanced Computer Systems Development",
     Location: "University of West of Scotland",
   },
