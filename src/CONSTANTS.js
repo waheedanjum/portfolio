@@ -244,7 +244,7 @@ export const Projects = [
     image: CQCProjectImage,
     title: "Care Quality Commsion",
     description: "Revamping CQC Website with Scalable API and Cloud Solutions.",
-    link: "https://u369crypto.on.fleek.co/home",
+    link: "https://www.cqc.org.uk/",
   },
   {
     image: NextProjectImage,
