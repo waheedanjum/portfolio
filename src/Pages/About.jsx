@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { Education, Experience } from "../CONSTANTS";
 
 const About = () => {
-  // Split the experience items into pair
+  // Split the experience items into pairs
+
   const experiencePairs = [];
   for (let i = 0; i < Experience.length; i += 2) {
     experiencePairs.push(Experience.slice(i, i + 2));
