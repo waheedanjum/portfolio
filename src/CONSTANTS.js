@@ -19,7 +19,7 @@ import ReduxLogo from "./assets/redux.svg";
 import FirebaseLogo from "./assets/firebase.svg";
 
 export const PHONE_NUMBER = "+447379955442";
-export const NAME = "Waheed Anjum";
+export const NAME = "Waheed Anju";
 export const EMAIL = "me@waheedanjum.com";
 export const ADDRESS = "2 The Leas East Kilbride G75 9PY United Kingdom";
 export const LINKEDIN = "https://www.linkedin.com/in/muhammad-waheed-anjum-full-stack-developer/";
